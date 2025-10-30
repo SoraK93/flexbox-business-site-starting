@@ -1,14 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Accent Dealtrade</title>
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CodeWar - Homepage</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/favicon.png" alt="" />
+        <p>CodeWar</p>
+      </div>
+      <nav class="navbar">
+        <ul class="desktop">
+          <li><a href="#mainContent">Home</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contactUs">Contact Us</a></li>
+        </ul>
+        <ul class="mobile">
+          <li><img src="./assets/icons/home.svg" alt="home" /></li>
+          <li><img src="./assets/icons/about.svg" alt="about us" /></li>
+          <li><img src="./assets/icons/group.svg" alt="team" /></li>
+          <li>
+            <img src="./assets/icons/contact_page.svg" alt="contact us" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="mainContent" class="mainContent">
+        <article class="intro">
+          <!-- background img by Clint Patterson (unsplash) -->
+          <div>
+            <h1>Welcome to CodeWar</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              eligendi blanditiis nesciunt hic assumenda harum deserunt
+              accusamus aspernatur rem distinctio cumque, quo ipsa praesentium
+              molestias fugiat ea illo quaerat perferendis? Alias tenetur rem,
+              sit aspernatur culpa adipisci aperiam debitis dolorum laboriosam,
+              maiores quo possimus nostrum est voluptatibus illum dolores sequi
+              animi qui corrupti officia porro soluta perspiciatis labore iste!
+              Veniam.
+            </p>
+          </div>
+        </article>
+        <article class="gallery">
+          <div>
+            <h2>To Be The Best!!</h2>
+          </div>
+          <div>
+            <ul>
+              <li class="gallery1">
+                <!-- photo by Arif Riyanto (unsplash)-->
+                <img
+                  src="./assets/gallery1.jpg"
+                  alt="person working on code"
+                  loading="lazy"
+                />
+              </li>
+
+              <li class="gallery3">
+                <!-- photo by Mohammad Rahmani (unsplash)-->
+                <img
+                  src="./assets/gallery3.jpg"
+                  alt="person desiging webpage"
+                  loading="lazy"
+                />
+              </li>
+              <li class="gallery2">
+                <!-- photo by Procreator Global UI UX Design Agency (unsplash)-->
+                <img
+                  src="./assets/gallery2.jpg"
+                  alt="person uses multi screen"
+                  loading="lazy"
+                />
+              </li>
+              <li class="gallery4">
+                <!-- photo by ThisisEngineering (unsplash)-->
+                <img
+                  src="./assets/gallery4.jpg"
+                  alt="person working on backend service"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section id="aboutUs" class="aboutUs">
+        <article>
+          <div>
+            <h2>Our Ideals</h2>
+          </div>
+          <div class="quotes">
+            <p>
+              <em>
+                "The competent programmer is fully aware of the limited size of
+                his own skull. He therefore approaches his task with full
+                humility, and avoids clever tricks like the plague."
+              </em>
+              <strong>- Edsger Dijkstra</strong>
+            </p>
+            <p>
+              <em>"Competition breeds excellence"</em>
+              <strong>- Gordon Tredgold</strong>
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="team" class="team">
+        <div>
+          <h2>Our Team</h2>
+        </div>
+        <div>
+          <!-- photo by Matias Malka (unsplash)-->
+          <img src="./assets/team1.jpg" alt="" />
+          <!-- photo by KeepCoding (unsplash)-->
+          <img src="./assets/team2.jpg" alt="" />
+        </div>
+      </section>
+      <section id="contactUs" class="contactUs">
+        <div>
+          <h2>Contact Us:</h2>
+        </div>
+        <div class="author">
+          <div>
+            <p>Author: <span>SoraK93</span></p>
+            <p>Contact: +123456789</p>
+            <p>Location: Inside the code.</p>
+          </div>
+          <div class="authorImg">
+            <img src="./assets/founder.jpg" alt="" loading="lazy" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Codecademy Project</p>
+    </footer>
+  </body>
 </html>

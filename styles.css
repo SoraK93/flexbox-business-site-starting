@@ -1,6 +1,263 @@
+/* preset */
+:root {
+  --baseFontSize: calc(16px * 0.625);
+  --bg: rgb(47, 76, 141);
+  --header-bg-hover: rgb(58, 98, 184);
+  --text-color: rgb(245, 245, 245);
+  --black: rgb(0, 0, 0);
+  --quote-bg: rgb(245, 245, 245);
+}
+
 * {
   border: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* default */
+html {
+  font-size: var(--baseFontSize);
+}
+
+.gallery h2,
+.team h2 {
+  text-align: center;
+  font-size: 7.5em;
+  margin: 0.5em 0;
+  color: var(--text-color);
+}
+
+.gallery,
+.team {
+  background-color: var(--bg);
+  padding: 2em;
+}
+
+/* header */
+header {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 1em;
+}
+
+.logo p {
+  color: var(--text-color);
+  margin-left: 0.5em;
+  font-size: 5rem;
+}
+
+.navbar {
+  width: calc(100% - 400px);
+}
+
+.desktop,
+.mobile {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.desktop li,
+.mobile li {
+  width: 150px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.desktop li:hover,
+.mobile li:hover {
+  height: 100%;
+  background-color: var(--header-bg-hover);
+}
+
+.desktop a,
+.mobile a {
+  color: var(--text-color);
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+/* mainContent */
+/* intro */
+.intro {
+  background-image: url("./assets/mainContent-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 800px;
+}
+
+.intro div {
+  width: 40%;
+  height: 100%;
+  margin: 0 4em;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro h1 {
+  height: 30%;
+  font-size: 10em;
+  margin-bottom: 0.5em;
+}
+
+.intro p {
+  width: 80%;
+  font-size: 2.5em;
+}
+
+/* about us */
+.aboutUs {
+  height: 500px;
+  padding: 3em;
+  background-color: rgb(223, 220, 220);
+  box-shadow: 0 0 10px 0 var(--black) inset;
+}
+
+.aboutUs article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.aboutUs h2 {
+  text-align: center;
+  font-size: 7.5em;
+  margin-bottom: 0.5em;
+  color: var(--text-color);
+  text-shadow: 0 0 8px rgb(9, 13, 197);
+}
+
+.quotes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quotes p {
+  width: 45%;
+  height: 200px;
+  padding: 20px;
+  font-size: 2.5em;
+  box-shadow: -1px 2px 5px 0 var(--black);
+  border-radius: 10px;
+  background-color: var(--quote-bg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+/* gallery & team */
+.gallery ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.gallery ul li {
+  list-style-type: none;
+}
+
+.gallery img,
+.team img {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  box-shadow: 0 0 5px 1px var(--black);
+  border-radius: 5px;
+}
+
+.team div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+/* contact us */
+.contactUs {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
+
+.contactUs div {
+  width: 40%;
+  margin: 2em auto;
+}
+
+.contactUs h2 {
+  font-size: 7.5em;
+  text-align: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--black);
+  border-left: none;
+  box-shadow: 5px 5px 1px var(--black);
+}
+
+.author p {
+  font-size: 2.5em;
+}
+
+.authorImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.authorImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* footer */
+footer {
+  height: 2em;
+  color: var(--text-color);
+  background-color: var(--black);
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
