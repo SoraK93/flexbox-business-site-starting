@@ -17,6 +17,7 @@
 
 /* default */
 html {
+  width: 100%;
   font-size: var(--baseFontSize);
 }
 
